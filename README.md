@@ -4,7 +4,7 @@ tauottaja soittaa musiikkia random ajankohtina, aikaan ja kohdasta. Poikkeuksena
 kielenä käytetään java scrptiä
 
 asennuspaketit
-discord, discord.js, node.js, dotenv, jos haluaa että salasanat api avain tai muuta herkkää dataa ei näy koodissa. joku haluamasi koodin käsittely ohjelma esim. visualstudio code tai web storm
+discord, discord.js, node.js, joku haluamasi koodin käsittely ohjelma esim. visualstudio code tai web storm
 
 riippvuudet
 
@@ -17,13 +17,34 @@ webstorm
 
 pystytyksen kuvaus
 discordin tarvii
-node.js 
+node.js käyttöjärjestelmän asennus rutiinin mukaisesti
+mene webstormin terminaaliin ja varmista että olet projektin omassa kansiossa sen jälkeen
 
-node.js:sään 
+npm init -y
 npm install discord.js 
-npm install @discordjs/rest 
-npm install @discordjs/voice
+yarn add discord.js
+pnpm add discord.js
+(npm install @discordjs/rest) 
+(npm install @discordjs/voice)
+
+.env, jos haluaa että salasana api-avain tai muu herkkä data ei näy koodissa.
+npm install dotenv --save
+
 
 https://github.com/Baanaani/Haippo_botti
 
-botti liittyy puhekanavalle jolla olet ja alkaa soittamaan musiikkia hetken aikaa ostain satunnaisesta kohdasta, jonka se on ottanut jostakin musiikin toisto palvelusta. /quit komento poistaisi botin kanavalata ja /ruoka voisi säätää ruuan alkamis ajankohtaa.
+selkokielellä
+liitä botti jäseneksi serverille.
+soittoajan määrityksen ajastin alkaa klo 8.00 ja loppuu 15.00 ihan sama mitä tekee
+(/ajastin komento, jolloin ajastin alkaa käydä ja loppuu /lopeta ajastin)
+soittoajan määritys 30min-90min 
+arpoo monenko minuutin kuluttua musiikki alkaa soida
+alkaa soida uudelleen (loop)
+soittoaika 15sec-30sec
+valitsee musiikin ennalta määritetystö paikasta
+musiikissa jäljellä ainakin botin arpoman ajan verran (jos ei toteudu vaihtaa uuteen musiikkiin.)
+
+botti liittyy palvelimelle ja sitten puhekanavalle,
+
+
+jolla olet ja alkaa soittamaan musiikkia hetken aikaa jostain satunnaisesta kohdasta, jonka se on ottanut jostakin musiikintoisto palvelusta. /quit komento poistaisi botin kanavalata ja /ruoka voisi säätää ruuan alkamis ajankohtaa.
