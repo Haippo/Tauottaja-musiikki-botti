@@ -5,7 +5,7 @@ asennuspaketit, discord, discord.js, node.js, dotenv, jos haluaa että salasanat
 discord botti tarvitsee puhumis oikeuden ja oikeuden joinata mille tahansa kanavalle
 kehitysalusta webstorm
 
-node.js:sään npm install discord.js  npm install @discordjs/rest  npm install @discordjs/voice
+discordin tarvii ja node.js node.js:sään npm install discord.js npm install @discordjs/rest npm install @discordjs/voice
 
 https://github.com/Baanaani/Haippo_botti
 
