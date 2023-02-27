@@ -10,7 +10,9 @@ riippvuudet
 
 
 oikeudet
-discord botti tarvitsee puhumis oikeuden ja oikeuden joinata mille tahansa kanavalle
+puhumis
+joinata mille tahansa kanavalle
+soundcloud listaan
 
 kehitysalusta 
 webstorm
@@ -36,12 +38,15 @@ https://github.com/Baanaani/Haippo_botti
 selkokielellä
 liitä botti jäseneksi serverille.
 soittoajan määrityksen ajastin alkaa klo 8.00 ja loppuu 15.00 ihan sama mitä tekee
-(/ajastin komento, jolloin ajastin alkaa käydä ja loppuu /lopeta ajastin)
+(/alita tauottaja komento, jolloin ajastin alkaa käydä ja loppuu /lopeta tauottaja)
 soittoajan määritys 30min-90min 
 arpoo monenko minuutin kuluttua musiikki alkaa soida
-alkaa soida uudelleen (loop)
-soittoaika 15sec-30sec
-valitsee musiikin ennalta määritetystö paikasta
+ajastin käynnistyy
+kun, ajastin on 0 musiikki käynnistyy
+seurvaana tauon arvonta alkaa kun musiikki on soitettu
+soittoajan pituuden arvonta 15sec-30sec
+ajastimen käynnistys
+valitsee musiikin soundcloud listalta
 musiikissa jäljellä ainakin botin arpoman ajan verran (jos ei toteudu vaihtaa uuteen musiikkiin.)
 
 botti liittyy palvelimelle ja sitten puhekanavalle,
