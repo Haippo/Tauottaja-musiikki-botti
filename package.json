@@ -1,0 +1,29 @@
+{
+  "name": "haippo_botti",
+  "version": "1.0.0",
+  "description": "kuvaus\r tauottaja soittaa musiikkia random ajankohtina, aikaan ja kohdasta. Poikkeuksena klo 11.30 ruoka, jolloin botti soittaa aina jotakin musiikkia. \r kielenä käytetään java scrptiä",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baanaani/Haippo_botti.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baanaani/Haippo_botti/issues"
+  },
+  "homepage": "https://github.com/Baanaani/Haippo_botti#readme",
+  "dependencies": {
+    "@discordjs/opus": "^0.9.0",
+    "@discordjs/voice": "^0.14.0",
+    "discord-player": "^5.4.0",
+    "discord.js": "^14.7.1",
+    "distube": "^4.0.4",
+    "dotenv": "^16.0.3",
+    "libsodium": "^0.7.11"
+  }
+}
