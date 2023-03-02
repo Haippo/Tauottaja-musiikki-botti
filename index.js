@@ -60,6 +60,7 @@ client.on("disconnected", function () {
     process.exit(1);
 });
 
+
 // This code will run once the bot receives any message.
 client.on('messageCreate', msg => {
 
