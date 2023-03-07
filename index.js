@@ -1,6 +1,8 @@
 require('dotenv').config()
-
-// Load discord.js
+const { createAudioPlayer, NoSubscriberBehavior } = require('@discordjs/voice');
+//Load discord.js
+const { generateDependencyReport } = require('@discordjs/voice');
+console.log(generateDependencyReport());
 const { Client, GatewayIntentBits, Events } = require('discord.js');
 const client = new Client({
     intents: [
@@ -35,10 +37,22 @@ client.on("messageCreate", message => {
             message
         })
     }
-})
-client.DisTube.on("playSong",(queue, song) => {
-    queue.textChannel.send("Nyt soi: " + song.name)
-})
+
+    if (message.content.toLowerCase() === prefix + "pause") {
+        client.DisTube.pause(message);
+        message.reply("Musiikin tauolla.");
+    }
+
+    if (message.content.toLowerCase() === prefix + "resume") {
+        client.DisTube.resume(message);
+        message.reply("Musiikki jatkuu.");
+    }
+
+    if (message.content.toLowerCase() === prefix + "stop") {
+        client.DisTube.stop(message);
+        message.reply("Musiikki lopetettu.");
+    }
+});
 
 
 
@@ -73,5 +87,4 @@ client.on('messageCreate', msg => {
         }
     }
 });
-
 client.login(process.env.TOKEN)
