@@ -56,6 +56,7 @@ client.on("messageCreate", message => {
 
 
 
+
 // Create a client
 //const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 

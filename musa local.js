@@ -27,20 +27,6 @@ client.on(Events.MessageCreate, message => {
     const prefix = "+"
     const args = message.content.slice(prefix.length).trim().split(/ +/g)
 
-    function getDuration(src) {
-        return new Promise(function(resolve) {
-            var audio = new Audio();
-            $(audio).on("loadedmetadata", function(){
-                resolve(audio.duration);
-            });
-            audio.src = src;
-        });
-    }
-    getDuration("./audio/2.mp3")
-        .then(function(length) {
-            console.log('I got length ' + length);
-            document.getElementById("duration").textContent = length;
-        });
     if (message.content.toLowerCase() === prefix + "biisi") {
         const connection = joinVoiceChannel({
             channelId: message.member.voice.channelId,
@@ -94,6 +80,7 @@ client.on(Events.MessageCreate, message => {
             player.play(resource)
         }
     }
+
 
 });
     client.login(process.env.TOKEN)
