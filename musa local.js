@@ -12,6 +12,7 @@ const client = new Client({ intents:[
         GatewayIntentBits.MessageContent ],
 });
 
+
 const {
     joinVoiceChannel,
     createAudioPlayer,
